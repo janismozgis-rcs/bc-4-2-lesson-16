@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Greeting from "./Components/Greeting";
+import Number from "./Components/Number";
+
 
 function App() {
+
+  const meaningOfLife = 42;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+        <h2>Component 1</h2>
+        <Greeting name="Johnny"/>        
+        <Greeting name="Jane"/>        
+        <Greeting name="Billy"/>    
+
+        <h2>Component 2</h2> 
+        <Number number={4}/>
+        <Number number={5}/>
+        <Number number={meaningOfLife}/>
+
     </div>
   );
 }
